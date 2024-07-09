@@ -15,13 +15,13 @@ const sendOTPEmail = async (email, otp) => {
     service: "gmail",
     port: 587,
     auth: {
-      user: "ranjithvoc32@gmail.com",
-      pass: "mspo izgl sreb gfsw"
+      user: "nitt50201@gmail.com",
+      pass: "uuqa hfcg nbhc nxlg"
     }
   });
 
   const mailOptions = {
-    from: 'ranjithvoc32@gmail.com',
+    from: 'nitt50201@gmail.com',
     to: email,
     subject: 'Your OTP Code',
     text: `Your OTP code is ${otp}`,
