@@ -35,13 +35,13 @@ const ItemCard = (props) => {
         >
           {isHovered ? (
             <img
-              src={`${process.env.REACT_APP_API_URL}public/${props.item.category}/${props.item.image[1].filename}`}
+              src={`${process?.env?.REACT_APP_API_URL}public/${props?.item?.category}/${props?.item?.image?.[1]?.filename}`}
               alt="item"
               className="product__img"
             />
           ) : (
             <img
-              src={`${process.env.REACT_APP_API_URL}public/${props.item.category}/${props.item.image[0].filename}`}
+              src={`${process?.env?.REACT_APP_API_URL}public/${props?.item?.category}/${props?.item?.image?.[0]?.filename}`}
               alt="item"
               className="product__img"
             />
@@ -49,15 +49,15 @@ const ItemCard = (props) => {
         </div>
         <div className="product__card__detail">
           <div className="product__name">
-            <Link to={`/item/${props.item.category}/${props.item._id}`}>
-              {props.item.name}
+            <Link to={`/item/${props?.item?.category}/${props?.item?._id}`}>
+              {props?.item?.name}
             </Link>
           </div>
           <div className="product__description">
-            <span>{props.item.description}</span>
+            <span>{props?.item?.description}</span>
           </div>
           <div className="product__price">
-            <span>${props.item.price}</span>
+            <span>${props?.item?.price}</span>
           </div>
           <div className="product__card__action">
             <IconButton
