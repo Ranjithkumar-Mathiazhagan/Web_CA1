@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000
 // middlewares
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
-app.use(express.static("public"));
+// app.use(express.static("public"));
 app.use(cors());
 // connect to the mongodb database
 connectDB();
