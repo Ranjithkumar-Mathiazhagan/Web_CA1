@@ -35,13 +35,13 @@ const ItemCard = (props) => {
         >
           {isHovered ? (
             <img
-              src={`${process?.env?.REACT_APP_API_URL}public/${props?.item?.category}/${props?.item?.image?.[1]?.filename}`}
+              src={`${process.env.REACT_APP_API_URL}public/${props?.item?.category}/${props?.item?.image?.[1]?.filename}`}
               alt="item"
               className="product__img"
             />
           ) : (
             <img
-              src={`${process?.env?.REACT_APP_API_URL}public/${props?.item?.category}/${props?.item?.image?.[0]?.filename}`}
+              src={`${process.env.REACT_APP_API_URL}public/${props?.item?.category}/${props?.item?.image?.[0]?.filename}`}
               alt="item"
               className="product__img"
             />
