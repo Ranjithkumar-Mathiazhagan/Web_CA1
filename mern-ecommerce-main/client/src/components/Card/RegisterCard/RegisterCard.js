@@ -13,7 +13,7 @@ const RegisterCard = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`http://localhost:5000/api/auth/register`, {
+      await axios.post(`https://web-ca1.onrender.com/api/auth/register`, {
         name,
         email,
         password,
@@ -28,7 +28,7 @@ const RegisterCard = () => {
   const handleVerifyOTP = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`http://localhost:5000/api/auth/verify`, { email, otp });
+      await axios.post(`https://web-ca1.onrender.com/api/auth/verify`, { email, otp });
       alert("Registration successful");
       navigate("/account/login");
     } catch (err) {

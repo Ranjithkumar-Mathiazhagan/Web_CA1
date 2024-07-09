@@ -43,7 +43,7 @@ const Cart = () => {
                 amount: cartItems.totalAmount
             }
 
-        await axios.post("http://localhost:5000/api/payment", config)
+        await axios.post("https://web-ca1.onrender.com/api/payment", config)
             .then((res) => {
                     console.log(res.data)
                     window.location.replace(res.data)
